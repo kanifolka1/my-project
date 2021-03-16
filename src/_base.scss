@@ -1,0 +1,149 @@
+
+body {
+    font-family:$font-body, sans-serif;
+    font-size:$size/2;
+    line-height:$size;
+    background: url('../images/bg.gif')$base-color repeat-x;
+    margin:0;
+}
+
+main {
+        width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+}
+nav {
+	width: 540px;
+	height: 190px;
+	float: left;
+	text-align: right;
+	ul {
+		list-style-type: none;
+		margin-top: 95px;
+		li {
+			display: inline;
+			font-size: 0.8em;
+			margin-right: 10px;
+			a {
+				color: #E65C43;
+				text-decoration: none;
+				letter-spacing: -0.01em;
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}
+	}
+}
+
+header {
+	width: inherit;
+	clear: both;
+	text-align: center;
+	padding-top: 40px;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	h1 {
+		color:$link-color;
+		font-weight: 100;
+		font-size: 4em;
+		line-height: 0;
+	}
+	h2 {
+		color:$base-color;
+		font-weight: 900;
+		font-size: $size+$size/4;
+		line-height: 0;
+		margin-bottom: 70px;
+	}
+	h3 {
+		color:$devil;
+		font-weight: 400;
+		font-size: $size;
+		line-height: 0;
+		margin-bottom: 50px;
+	}
+}
+#headline {
+	width: 100%;
+	height: 130px;
+	background:$background-color;
+	text-align: center;
+	margin: 0 auto;
+	h1 {
+		color:$base-color;
+		font-size: $size+$size/4;
+		font-weight: 100;
+		padding-top: 50px;
+	}
+}
+#content {
+	width: 940px;
+	margin: 20px auto;
+	h3 {
+		color:$devil;
+		font-size: $size;
+		font-weight: 400;
+	}
+	#products {
+		width: 460px;
+		float: left;
+		img {
+			float: left;
+			margin-right: 20px;
+		}
+		article {
+			margin-bottom: 40px;
+		}
+		h4 {
+			line-height: 1em;
+		}
+	}
+	#testimonials {
+		width: 460px;
+		float: right;
+	}
+}
+.greybar {
+	width: 100%;
+	height: 90px;
+	background: $background-color;
+	clear: both;
+	padding-top: 30px;
+}
+footer {
+	width: 100%;
+	height: 120px;
+	background: $bg;
+	text-align: center;
+	color:$base-color;
+	padding-top: 50px;
+}
+.social-media {
+	margin: 0 auto;
+	width: 165px;
+	div {
+		float: left;
+		margin-right: 5px;
+	}
+	a {
+		display: block;
+		width: 36px;
+		height: 36px;
+		text-indent: -9999px;
+	}
+	div.one {
+		background: url('../images/social-media.png') 0 0;
+	}
+	div.two {
+		background: url('../images/social-media.png') -38px 0;
+	}
+	div.three {
+		background: url('../images/social-media.png') -76px 0;
+	}
+	div.four {
+		background: url('../images/social-media.png') -114px 0;
+	}
+}

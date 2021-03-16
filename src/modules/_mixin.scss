@@ -1,0 +1,29 @@
+@mixin backImage ($image, $height:400px) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    height: $height;
+}
+@mixin clearfix {
+       &:before, &:after {
+           content: '';
+           display: table;
+    }
+    &:after {
+        clear: both;
+    } 
+}
+@mixin break ($args...) {
+        @if lenth($args) == 1 {
+           @media (min-width: nth($args, 1)) {
+                @content;
+            }
+        }
+        @if lenth($args) == 2 {
+            @media(min-with:nth($args, 1 )) and
+                  ( max-width:nth($args, 2)){
+                    @content;
+            }
+
+        }
+}
